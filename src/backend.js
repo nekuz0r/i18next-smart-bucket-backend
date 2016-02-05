@@ -22,7 +22,7 @@ class Backend {
   }
 
   read (language, namespace, callback) {
-    const tag = this.service.interpolator.interpolate(this.options.tagFormat, {
+    const tag = this.services.interpolator.interpolate(this.options.tagFormat, {
       lng: language,
       ns: namespace
     });
