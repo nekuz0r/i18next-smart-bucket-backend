@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "babel-runtime": "^6.3.19",
-    "smart-bucket": "^1.0.0"
+    "smart-bucket": "^1.0.1"
   },
   "private": false,
   "publishConfig": {
