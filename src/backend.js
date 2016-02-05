@@ -28,8 +28,11 @@ class Backend {
     });
 
     SmartBucket.get(tag)
-    .then((resources) => {
-      return callback(null, resources);
+    .then((ressources) => {
+      if (this.options.combinedNS === true) {
+        return callback(null, ressources[namespace]);
+      }
+      return callback(null, ressources);
     })
     .catch((error) => {
       return callback(error, false);
